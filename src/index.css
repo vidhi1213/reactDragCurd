@@ -1,0 +1,544 @@
+body{
+  padding-top: 6rem;
+}
+.myNavbar {
+  padding: 1.25rem;
+  }
+.navbar-default .navbar-nav>li>a{
+  font-weight: 600;
+}
+a.active_class{
+  color:#00eaff !important; 
+  border-bottom: 2px solid #000;
+  
+}
+
+/* .navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+  color:#00eaff !important;
+  background-color: transparent !important;
+ 
+} */
+.navbar-default .navbar-nav>li>a{
+color: #000;
+font-size: 0.75rem;
+  padding:0.875rem;
+text-transform: uppercase;
+text-decoration: none;
+}
+.bg.scrollup .navbar-default .nav .nav-item a{
+  color: #fff;
+}
+.navbar-default .navbar-brand{
+  padding: 0;
+  margin-left: 0 !important;
+  color: #000;
+}
+
+.bg.scrollup {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #6600ff;
+  
+}
+.bg.scrollup .navbar-default .navbar-nav>li>a{
+  color: #fff;
+}
+ .bg {
+padding: .2rem 0;
+  border: none;
+  background-color: transparent;
+  top:0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+	border: 0.125rem solid #00c9db;
+	border-radius: 2rem;
+	background-color: #00c9db;
+	color: #fff;
+	font: 700 0.75rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #00c9db;
+	text-decoration: none;
+}
+.header .btn-solid-lg {
+  margin-right: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+.card .card img,.card .card-body{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card{
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.13);
+  transition: all.3s ease-in-out;
+}
+.card:hover {
+  border-radius: 5px;
+  transform: translateY(-10px);
+}
+.card button:hover{
+  cursor: pointer;
+}
+form input{
+  width: 100%;
+  height: 40px;
+}
+.main_div{
+  width: 300px;
+  height: 500px;
+  background-color: rgb(247, 242, 242);
+  border-radius: 15px;
+  overflow-y: auto;
+}
+.main_div h1{
+  background-color:  #8566aa;
+  color: #ffffff;
+}
+.main_div input{
+  background-color:transparent;
+  border: none;
+  border-bottom: 2px solid #8566aa;
+   
+}
+.main_div button{
+  border: none;
+  background: transparent;
+  width: 35px;
+    height: 35px;
+    background:#8566aa;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    font-size: 25px;
+    line-height: 0;
+}
+.main_div button:hover{
+  background-color: rgb(113, 248, 226);
+}
+.main_div button:focus ,.main_div input:focus{
+  outline: none;
+}
+.main_div .todo_style{
+  text-align: left;
+}
+.todo_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo_style .fa-times{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin-top: 10px;
+  color:aliceblue;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+.todo_style .fa-times:hover{
+  background-color: crimson;
+}
+.todo_style .fa-times .list_style{
+  color: crimson;
+}
+.main_div li{
+  list-style: none;
+  display: inline-block;
+
+}
+.main_div span .deleteicon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:#8566aa;
+  color: aliceblue;
+  margin:10px 10px 10px 0;
+  box-shadow:  5px 5px 15px -5px(0,0,0,0,3);
+}
+.main_div span .deleteicon:hover{
+  background-color: transparent;
+  box-shadow:  5px 5px 15px -5px(0,0,0,0,5);
+  color: crimson;
+  
+}
+.main_note,.note{
+  padding: 2rem;
+  position: relative;
+}
+.main_note input{
+  font-size: 1.77rem; 
+ 
+}
+.main_note input,.main_note textarea{
+  border:none;
+}
+
+.main_note input:focus,.main_note  textarea:focus,.main_note Button:focus,.note Button:focus{
+outline: none;
+}
+.main_note textarea{
+  width: 100%;
+}
+.main_note Button,
+.note Button{
+  position: absolute;
+  width:15px;
+  border-radius: 50%;
+ bottom:-11%;
+ right:2%;
+background: #ffffff;
+transition: 0.3s all;
+
+}
+.main_note Button:hover,.note Button:hover{
+  
+  background: yellow;
+}
+.nb{
+  display: inline-block;
+
+}
+.react-kanban-column{
+  height: 100%;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 2px;
+  background-color: #eee;
+  margin: 5px;
+  vertical-align: top;
+  /* width: 50%; */
+}
+.react-kanban-card-adder-button{
+  width: 100%;
+  margin-top: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.react-kanban-card-adder-form{
+  box-sizing: border-box;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+.react-kanban-card-adder-form__title{
+  border: 0px;
+    font-family: inherit;
+    font-size: inherit;
+}
+.react-kanban-card-adder-form__description{
+  display: none;
+}
+.layout__wrapper {
+  background-image: linear-gradient(0deg, hsl(215, 14%, 16%) 0%, hsl(215, 19%, 29%) 100%);
+  border-radius: 3px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, .25);
+  /* margin: 3rem auto; */
+  /* max-width: 370px; */
+}
+
+.app-bar {
+  border-radius: 3px;
+}
+
+.app-bar__title {
+  color: var(--color-on-background);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  min-height: 1.5rem;
+  padding: 0;
+  position: relative;
+}
+
+.list__item {
+}
+
+.card {
+  background-color: hsl(215, 14%, 37.5%);
+  border-radius: var(--border-radius-500);
+  cursor: pointer;
+  /* color: hsl(228, 19%, 98%); */
+  padding: .66rem 1rem;
+  position: relative;
+}
+
+.list__item + .list__item {
+  margin-top: .5rem;
+}
+.data{
+  display: flex;
+}
+.holder {
+  padding: 1rem 1.5rem;
+  width: 500px;
+}
+/* [data-rbd-droppable-context-id]{
+  display: flex !important;
+} */
+.u_kanban-row{
+  display: flex;
+    margin: 0 -10px;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+.u-main{
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  transition: width .35s;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 1px;
+  position: relative;
+}
+
+.holder__title {
+  background-color: #1da5f9;
+  background-image: linear-gradient(90deg, #028ce1 0%, #6acbe0 100%);
+  border-radius: var(--border-radius-500);
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: .75rem 1rem;
+}
+
+.holder--tint-2 .holder__title {
+  background-image: linear-gradient(90deg, #2fd4bd 0%, #66e887 100%);
+}
+
+.holder--tint-3 .holder__title {
+  background-image: linear-gradient(90deg, #fe8080 33%, #fea380 100%);
+}
+.react-kanban-card {
+  box-sizing: border-box;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 7px
+}
+.react-kanban-card__title{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  justify-content: space-between;
+}
+.ToData{
+  margin: 8px;
+    border-radius: 2px;
+    border: 1px solid lightgrey;
+  
+    display: flex;
+
+    flex-direction: column;
+    width: 230px;
+    background: white;
+}
+.ToData h3{
+  padding: 8px;
+}
+.Add_More{
+  padding: 8px;
+  
+    flex-grow: 1;
+    min-height: 100px;
+  
+    background-color: white;
+}
+li{
+  padding: 20px !important;
+}
+/* a{
+  
+text-decoration: none !important;
+color:#fff !important;
+} */
+body{
+  padding-top: 0 !important;
+}
+.page-link{
+  background-color: #000 !important;
+}
+
+/* pagination */
+.custom-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* -webkit-transform: translateX(-50%); */
+  /* transform: translateX(-50%); */
+  margin-left: 200px;
+}
+.custom-pagination ul {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 7px 12px;
+}
+.custom-pagination li{
+  list-style-type: none;
+  padding: 0 5px;
+}
+
+.custom-pagination ul li.active a, .custom-pagination ul li:hover a {
+  background: #52bce9;
+  border-radius: 50%;
+  color: #fff;
+}
+
+
+#search
+.search_container{
+  position:relative;
+}
+
+.search_container i{
+  position: absolute;
+  height: 25px;
+  max-width: 25px;
+  top: 8px;
+ right: 12px;
+}
+.e-appointment-details button{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #000000;
+    font-weight: normal;
+    letter-spacing: -0.24px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 3px;
+}
+.template-wrap{
+  color: #000;
+}
+.template-wrap p{
+  font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+   
+    text-transform: uppercase;
+}
+.template-wrap h4{
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+.e-appointment{
+  height:67px !important;
+}
+.e-resource-cells{
+  padding: 35px 7px 80px 16px;
+}
+.e-resource-cells h3{
+  color: #04AC80;
+  font-size: 24px;
+    line-height: 24px;
+    
+   
+    margin-bottom: 10px;
+
+}
+.e-work-cells{
+  border-bottom: transparent !important;
+}
+.e-resource-cells span{
+  font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+   
+}
+.e-auto-height{
+  height: unset !important;
+}
+/* .e-content-table tr > td:first-child{
+  height: auto !important;
+} */
+.e-resource-text{
+  overflow:unset;
+    white-space: normal !important;
+}
+.e-schedule-table col{
+  width: 110px !important;
+}
+.e-schedule .e-schedule-table>tbody>tr>td {
+white-space: normal;
+}
+.e-schedule .e-timeline-view .e-work-cells:nth-child(3n){
+  border-width: 0 5px 0px 1px !important; 
+}
+
+.e-schedule-table .e-content-table .e-auto-height > tbody > tr > td:nth-child(3n){
+  border-right: 2px solid black !important;
+}
+tr > td:nth-child(3n) {
+  border-right: 5px solid black !important;
+}
+.e-time-slots{
+  text-align: center;
+  vertical-align: middle;
+}
+.template-wrap{
+	display: inline-block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    flex: auto;
+}
+.e-appointment-details{
+	    display: inline-block !important;
+    overflow: visible !important;
+}
+.e-schedule .e-timeline-view .e-appointment{
+	overflow: visible !important;
+}
